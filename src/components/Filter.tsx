@@ -1,7 +1,18 @@
 "use client";
+<<<<<<< HEAD
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
+=======
+import {Select, SelectSection, SelectItem} from "@nextui-org/select";
+
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
+const tipovi = [
+    {key: "opcija1", label: "Opcija1"},
+    {key: "opcija2", label: "Opcija2"}, ];
+
+>>>>>>> 66fed6cc6d5af5f224e2810a5807de684ba79901
 const Filter = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -19,6 +30,7 @@ const Filter = () => {
   return (
     <div className="mt-12 flex justify-between">
       <div className="flex gap-6 flex-wrap">
+<<<<<<< HEAD
         <select
           name="type"
           id=""
@@ -29,6 +41,20 @@ const Filter = () => {
           <option value="physical">Physical</option>
           <option value="digital">Digital</option>
         </select>
+=======
+      <Select
+      label="Tip proizvoda"
+      placeholder="Izaberi tip"
+      selectionMode="multiple"
+      className="w-1/2"
+    >
+      {tipovi.map((tip) => (
+        <SelectItem key={tip.key}>
+          {tip.label}
+        </SelectItem>
+      ))}
+    </Select>
+>>>>>>> 66fed6cc6d5af5f224e2810a5807de684ba79901
         <input
           type="text"
           name="min"

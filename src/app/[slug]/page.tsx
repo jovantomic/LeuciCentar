@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Add from "@/components/Add"
 import ProductImages from "@/components/ProductImages"
 
@@ -63,6 +64,11 @@ const SinglePage = () => {
       
 
       </div>
+=======
+const SinglePage = () => {
+    return (
+      <div className=''>SinglePage</div>
+>>>>>>> 66fed6cc6d5af5f224e2810a5807de684ba79901
     )
   }
   
