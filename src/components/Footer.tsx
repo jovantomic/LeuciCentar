@@ -30,7 +30,8 @@ const Footer = () => {
             <h1 className="font-medium text-lg">INFORMACIJE</h1>
             <div className="flex flex-col gap-6">
               <Link href="">O nama</Link>
-              <a href="https://www.simplyworks.rs">Poslovi</a>
+
+              <Link href="">Poslovi</Link>
               <Link href="">Povrat</Link>
               <Link href="">Blog</Link>
               <Link href="">Kontaktiraj Nas</Link>

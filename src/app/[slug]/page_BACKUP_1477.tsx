@@ -1,4 +1,7 @@
-
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8572c7e2c7cd86418afae149b8790bb000734ffd
 import Add from "@/components/Add"
 import ProductImages from "@/components/ProductImages"
 
@@ -64,7 +67,15 @@ const SinglePage = () => {
       
 
       </div>
-     
-  )}
+<<<<<<< HEAD
+=======
+=======
+const SinglePage = () => {
+    return (
+      <div className=''>SinglePage</div>
+>>>>>>> 66fed6cc6d5af5f224e2810a5807de684ba79901
+>>>>>>> 8572c7e2c7cd86418afae149b8790bb000734ffd
+    )
+  }
   
   export default SinglePage

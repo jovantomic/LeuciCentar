@@ -1,4 +1,3 @@
-
 import Add from "@/components/Add"
 import ProductImages from "@/components/ProductImages"
 
@@ -64,7 +63,7 @@ const SinglePage = () => {
       
 
       </div>
-     
-  )}
+    )
+  }
   
   export default SinglePage

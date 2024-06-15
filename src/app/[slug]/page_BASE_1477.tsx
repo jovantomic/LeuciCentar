@@ -1,4 +1,8 @@
-
+<<<<<<<<< Temporary merge branch 1
+const SinglePage = () => {
+    return (
+      <div className=''>SinglePage</div>
+=========
 import Add from "@/components/Add"
 import ProductImages from "@/components/ProductImages"
 
@@ -64,7 +68,8 @@ const SinglePage = () => {
       
 
       </div>
-     
-  )}
+>>>>>>>>> Temporary merge branch 2
+    )
+  }
   
   export default SinglePage
