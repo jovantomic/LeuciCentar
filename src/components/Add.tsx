@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useState } from "react";
 
 const Add = ({
@@ -15,8 +14,7 @@ const Add = ({
   const [quantity, setQuantity] = useState(1);
 
   // // TEMPORARY
-  stockNumber=10;
-   const stock = 4;
+  // const stock = 4;
 
   const handleQuantity = (type: "i" | "d") => {
     if (type === "d" && quantity > 1) {
@@ -26,6 +24,7 @@ const Add = ({
       setQuantity((prev) => prev + 1);
     }
   };
+
 
   return (
     <div className="flex flex-col gap-4">
@@ -50,23 +49,24 @@ const Add = ({
             </button>
           </div>
           {stockNumber < 1 ? (
-            <div className="text-s">Proizvod trenutno nije dostupan</div>
+            <div className="text-xs">Proizvod je trenutno nedostupan</div>
           ) : (
-            <div className="text- s">
-              Ostalo je samo <span className="text-orange-500">{stockNumber} proizvoda</span>{" "}
-              na stanju!
+            <div className="text-xs">
+              Ostalo je još <span className="text-orange-500">{stockNumber} proizvoda</span>{" "}
+              samo!
               <br /> {"Nemoj da"} propustiš
             </div>
           )}
         </div>
         <button
-       
+   
           className="w-36 text-sm rounded-3xl ring-1 ring-lama text-lama py-2 px-4 hover:bg-lama hover:text-white disabled:cursor-not-allowed disabled:bg-pink-200 disabled:ring-0 disabled:text-white disabled:ring-none"
         >
-          Dodaj u Korpu
+         Dodaj u Korpu
         </button>
       </div>
     </div>
   );
 };
 
+export default Add;
